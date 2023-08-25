@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertidor de Decimal a Binario</title>
+  <script src="https://kit.fontawesome.com/c039a348ca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Convertidor de Decimal a Binario</h1>
+  <form data-theme="dark">
+    <div class="grid">
+      <label for="numberDec">
+        Número Deccimal
+        <div class="info">
+          <i class="fa-solid fa-circle-info"></i>
+          <span class="info__message">El número mínimo es 0 y el máximo es 255.</span>
+        </div>
+        <input id="numberDec" type="number" name="numberDec" placeholder="0" min="0" max="255" pattern="[0-9]" required>
+      </label>
+      <label for="numberBin">
+        Número Binario
+        <input id="numberBin" type="number" name="numberBin" placeholder="00000000" min="0" readonly>
+      </label>
+    </div>
+    <input id="convert" type="button" value="Convert">
+  </form>
+
+  <div class="binarios">
+    <h3>Lista de Binarios</h3>
+    <div class="contentBinarios binarios__content">
+    </div>
+    <button class="clearButton clear__button">Limpiar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
